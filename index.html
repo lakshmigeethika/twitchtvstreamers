@@ -1,0 +1,61 @@
+<head>
+   <title>twitch tv streamer</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="styles.css" rel="stylesheet">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+       <script src="twitch.js"></script>
+    
+</head>
+<body>
+   <h1 class="text-center">Twitch Tv Streamers</h1>
+   <div class="output text-center" style="width:75%; margin:0 auto;" >
+      <!--   here comes the json -->
+      <div class="fccstatus"> </div>
+      <div class="searchdiv">
+         <form>
+            <input type="search" name="search" id="searchfield" class="form-control text-center" >
+            <button type="submit" class="btn searchButton" id="search"><i class="fa fa-search"></i></button>
+         </form>
+         <!-- <div class="text-center">
+            <button type="button" class="btn searchButton" id="online">Online</button>
+               <button type="button" class="btn searchButton" id="offline">Offline</button></i></button>
+            </div> -->
+      </div>
+      <!-- table for online and offline channels -->
+      <table class="table table-bordered" id="statustable" >
+         <thead>
+            <tr>
+               <th class="text-center">Online</th>
+            </tr>
+         </thead>
+         <tbody id="statusbody">
+         </tbody>
+      </table>
+      <!--   table for search results -->
+      <table class="table table-bordered" id="searchtable">
+         <p></p>
+         <thead>
+            <tr>
+               <th class="text-center">Logo</th>
+               <th class="text-center">Name</th>
+               <th class="text-center">Status</th>
+            </tr>
+         </thead>
+         <tbody class="tablebody0">
+         </tbody>
+      </table>
+      <!--   table to display existing channels -->
+      <table class="table table-bordered" >
+         <thead>
+            <tr>
+               <th class="text-center">Logo</th>
+               <th class="text-center">Name</th>
+               <th class="text-center">Status</th>
+            </tr>
+         </thead>
+         <tbody class="tablebody1">
+         </tbody>
+      </table>
+   </div>
+   <body>
